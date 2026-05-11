@@ -95,6 +95,16 @@ nav a {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/* Force dropdown to align under the button and stay on-screen */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  right: 0;        /* Align right edge of menu with right edge of button */
+  left: auto;      /* Prevent left expansion */
+}
+
 
 /* ------------------------------
    HERO SECTION
