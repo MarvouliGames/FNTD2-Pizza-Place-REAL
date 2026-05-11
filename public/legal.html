@@ -1,3 +1,16 @@
+<div id="header"></div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    fetch("/header.html")
+      .then(r => r.text())
+      .then(html => {
+        document.getElementById("header").innerHTML = html;
+      });
+  });
+</script>
+
+
 <link rel="stylesheet" href="/assets/css/style.css">
 
 
