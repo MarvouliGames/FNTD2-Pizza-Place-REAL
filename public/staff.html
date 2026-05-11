@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<section class="staff-portal">
+  <h1>Staff Portal</h1>
+  <p>Authorized Personnel Only</p>
+
+  <div class="keypad">
+    <input type="password" id="code" placeholder="Enter Access Code" readonly>
+
+    <div class="keys">
+      <button onclick="press(1)">1</button>
+      <button onclick="press(2)">2</button>
+      <button onclick="press(3)">3</button>
+      <button onclick="press(4)">4</button>
+      <button onclick="press(5)">5</button>
+      <button onclick="press(6)">6</button>
+      <button onclick="press(7)">7</button>
+      <button onclick="press(8)">8</button>
+      <button onclick="press(9)">9</button>
+      <button onclick="clearCode()">Clear</button>
+      <button onclick="press(0)">0</button>
+      <button onclick="submitCode()">Enter</button>
+    </div>
+  </div>
+
+  <p id="response"></p>
+</section>
+
+<script>
+function press(n) {
+  document.getElementById("code").value += n;
+}
+
+function clearCode() {
+  document.getElementById("code").value = "";
+}
+
+function submitCode() {
+  const code = document.getElementById("code").value;
+
+  if (code === "1987") {
+    document.getElementById("response").innerText = "Access Granted. Loading logs…";
+    // redirect or reveal hidden content
+  } else {
+    document.getElementById("response").innerText = "Access Denied.";
+  }
+}
+</script>

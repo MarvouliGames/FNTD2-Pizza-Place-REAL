@@ -1,0 +1,257 @@
+/* ------------------------------
+   GLOBAL STYLES
+------------------------------ */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f7f7f9;
+  color: #222;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+}
+
+a {
+  color: #005bbb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------------------
+   HEADER + NAVIGATION
+------------------------------ */
+
+header {
+  background: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Dropdown */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #333;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  min-width: 180px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ------------------------------
+   HERO SECTION
+------------------------------ */
+
+.hero {
+  padding: 3rem 8vw;
+  background: linear-gradient(135deg, #ffcc33, #ffe89c);
+  color: #333;
+  text-align: left;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+}
+
+.map-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+/* ------------------------------
+   REVIEWS
+------------------------------ */
+
+.reviews {
+  padding: 3rem 8vw;
+}
+
+.reviews h2 {
+  margin-bottom: 1.5rem;
+}
+
+.review {
+  background: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* ------------------------------
+   ALTERNATING SECTIONS
+------------------------------ */
+
+.alt-section {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 8vw;
+  background: #ffffff;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.alt-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.alt-section img {
+  width: 45%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.alt-section h3 {
+  margin-bottom: 0.5rem;
+}
+
+.alt-section a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+/* ------------------------------
+   ATTRACTIONS PAGE
+------------------------------ */
+
+.attractions {
+  padding: 3rem 8vw;
+}
+
+.attraction {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* ------------------------------
+   STAFF PORTAL
+------------------------------ */
+
+.staff-portal {
+  padding: 3rem 8vw;
+  text-align: center;
+}
+
+.keypad {
+  margin: 2rem auto;
+  width: 260px;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.keypad input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.keys button {
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  border: none;
+  background: #ffcc33;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.keys button:hover {
+  background: #ffdb66;
+}
+
+#response {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+  background: #ffffff;
+  padding: 2rem 8vw;
+  border-top: 2px solid #e5e5e5;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
