@@ -260,6 +260,67 @@ nav a {
 .legal p {
   margin-left: 2rem;
 }
+/* PDF-style container */
+.legal-pdf {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 3rem 4rem;
+  background: #ffffff;
+  border: 1px solid #dcdcdc;
+  box-shadow: 0 0 20px rgba(0,0,0,0.08);
+  font-family: "Times New Roman", serif;
+  line-height: 1.7;
+}
+
+/* PDF-style headings */
+.legal-pdf h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.05em;
+}
+
+.legal-pdf h2 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.3rem;
+}
+
+/* Indented paragraphs */
+.legal-pdf p {
+  text-indent: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* PDF-style list */
+.legal-pdf ul {
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+.legal-pdf li {
+  margin-bottom: 0.5rem;
+}
+
+/* Link styling */
+.legal-pdf a {
+  color: #003399;
+  text-decoration: underline;
+}
+
+/* Optional: faint page number footer */
+.legal-footer-note {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  color: #777;
+  font-family: "Times New Roman", serif;
+}
+
 
 
 /* ------------------------------

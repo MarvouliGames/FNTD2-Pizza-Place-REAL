@@ -26,46 +26,40 @@
   });
 </script>
 
-<section class="legal">
-  <h1>Legal Notices</h1>
+<div id="header"></div>
 
-  <p>
-    Fazbear Entertainment is committed to maintaining transparency and compliance with all
-    state and federal safety regulations. The following information is provided as part of our
-    mandatory public disclosure requirements.
-  </p>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    fetch("/header.html")
+      .then(r => r.text())
+      .then(html => {
+        document.getElementById("header").innerHTML = html;
+      });
+  });
+</script>
+
+<section class="legal-pdf">
+
+  <h1>Fazbear Entertainment — Legal Notices</h1>
 
   <h2>Liability Statement</h2>
   <p>
-    Fazbear Entertainment is not responsible for death or injury while on premises owned by
-    said corporation. This includes but is not limited to death or injury caused by:
+    Fazbear Entertainment is not responsible for death or injury while on premises owned by said
+    corporation. This includes but is not limited to death or injury by robotic parts or part(s) of the
+    FunZone Boat Ride.
   </p>
 
-  <ul>
-    <li>Robotic components or animatronic mechanisms</li>
-    <li>Malfunctioning or detached parts of the FunZone Boat Ride</li>
-    <li>Unexpected movement of automated systems</li>
-  </ul>
-
   <p>
-    By entering the premises, guests acknowledge and accept these terms as part of the
-    standard visitor agreement.
+    By entering the premises, guests acknowledge and accept these terms as part of the standard
+    visitor agreement required for all Fazbear Entertainment locations.
   </p>
 
   <h2>Incident of November 13, 1987</h2>
   <p>
-    Case files regarding the incident of November 13, 1987, which led to the temporary
-    closure of this location, are made available for public review as required by law.
-  </p>
-
-  <p>
-    Fazbear Entertainment has since implemented enhanced safety protocols, upgraded
-    monitoring systems, and improved animatronic behavior‑tracking to prevent similar
-    events from occurring in the future.
-  </p>
-
-  <p>
-    The legally required documentation can be accessed at the following link:
+    Case files regarding the incident of November 13, 1987, which led to the temporary closure of
+    this location, can be found below. We have since improved our security and safety features to
+    prevent a similar event from happening, but the information is legally required to be shown
+    below for all who wish to see it.
   </p>
 
   <p>
@@ -76,10 +70,24 @@
 
   <h2>Additional Information</h2>
   <p>
-    For further inquiries, please contact Fazbear Entertainment Legal Affairs or visit the
-    <a href="/staff.html">Staff Portal</a> for internal documentation access.
+    For further inquiries, please contact Fazbear Entertainment Legal Affairs or visit the Staff Portal
+    for internal documentation access.
   </p>
+
+  <div class="legal-footer-note">
+    Document Reference: FE‑LGL‑1987‑SV01 • Page 1 of 1
+  </div>
+
 </section>
+
+<footer>
+  <p>© <span id="year"></span> Fazbear Entertainment. All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 
 <footer>
   <p>© <span id="year"></span> Fazbear Entertainment. All rights reserved.</p>
